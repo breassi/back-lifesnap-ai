@@ -67,24 +67,24 @@ O resultado é uma **história visual da sua vida**, enriquecida com **insights 
 
             +----------------------+
             |    Web / Mobile UI   |
-            |  (Angular / Flutter) |
+            |      (Angular)       |
             +----------+-----------+
                        |
                        v
             +----------+-----------+
-            |        API Gateway   |
+            |     API Gateway      |
             |    (.NET Core 9)     |
             +----+----------+------+
                  |          |
                  v          v
    +-------------+     +----+---------------+
    | NLP Service |     | Vision AI Engine   |
-   |  (spaCy)    |     | (YOLO / DeepFace)  |
+   |  (spaCy)    |     | (YOLO e DeepFace)  |
    +-------------+     +--------------------+
 
              +-----------------------------+
              |     MongoDB / PostgreSQL    |
-             |     AWS S3 (Fotos)          |
+             |      AWS S3 (Fotos)         |
              +-----------------------------+
 ---
 
@@ -134,38 +134,36 @@ Edit
 cd src/backend
 dotnet restore
 dotnet run
-Frontend (Angular 17)
-bash
-Copy
-Edit
+
+**Frontend (Angular 17)**
 cd src/frontend
 npm install
 ng serve
-NLP Engine (Python)
-bash
-Copy
-Edit
+
+**NLP Engine (Python)**
 cd src/nlp-engine
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python main.py
-⚠️ Requisitos:
 
+---
+
+## ⚠️ Requisitos:
 Node.js 18+
-
 Python 3.11+
-
 .NET Core 9 SDK
-
-Docker (opcional)
-
+Docker
 MongoDB local ou remoto
 
-📄 Licença
+---
+
+## 📄 Licença
 Distribuído sob a licença MIT. Veja o arquivo LICENSE para mais informações.
 
-💙 Agradecimentos
+---
+
+## 💙 Agradecimentos
 Esse projeto é inspirado pela importância de preservar e valorizar nossas memórias pessoais de forma inteligente, emocional e humana.
 
 "As fotos não guardam apenas momentos. Elas guardam a gente."
